@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>熹语学习笔记</title>
+  <title>熹语机器学习</title>
   
-  <subtitle>好好学习，天天向上</subtitle>
+  <subtitle>欢迎和熹语一起学习AI</subtitle>
   <link href="http://shushugui.github.io/atom.xml" rel="self"/>
   
   <link href="http://shushugui.github.io/"/>
@@ -28,7 +28,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;1-下载git和nodejs&quot;&gt;&lt;a href=&quot;#1-下载git和nodejs&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
         
       
     
@@ -49,7 +49,7 @@
       
         
         
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
         
       
     
