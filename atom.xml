@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>熹语机器学习</title>
+  <title>熹语机器学习笔记</title>
   
   <subtitle>欢迎和熹语一起学习AI</subtitle>
   <link href="http://shushugui.github.io/atom.xml" rel="self"/>
