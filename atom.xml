@@ -6,7 +6,7 @@
   <link href="http://shushugui.github.io/atom.xml" rel="self"/>
   
   <link href="http://shushugui.github.io/"/>
-  <updated>2022-03-28T14:07:21.304Z</updated>
+  <updated>2022-03-29T07:32:39.240Z</updated>
   <id>http://shushugui.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>有用的学习资源网站</title>
+    <link href="http://shushugui.github.io/2022/03/29/you-yong-de-xue-xi-zi-yuan-wang-zhan/"/>
+    <id>http://shushugui.github.io/2022/03/29/you-yong-de-xue-xi-zi-yuan-wang-zhan/</id>
+    <published>2022-03-29T01:22:18.000Z</published>
+    <updated>2022-03-29T07:32:39.240Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Tensorflow学习笔记</title>
