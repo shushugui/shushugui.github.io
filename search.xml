@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>动手学习深度学习——梯度求导</title>
+      <link href="/2022/04/04/dong-shou-xue-xi-shen-du-xue-xi-ti-du-qiu-dao/"/>
+      <url>/2022/04/04/dong-shou-xue-xi-shen-du-xue-xi-ti-du-qiu-dao/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="关于求导的一些基础知识"><a href="#关于求导的一些基础知识" class="headerlink" title="关于求导的一些基础知识"></a>关于求导的一些基础知识</h2><ul><li>任何一个张量求偏微分，其偏微分的形状和这个张量的形状是一样的</li></ul><p><img src="https://cdn.jsdelivr.net/gh/shushugui/cloudpic/202204041910333.png" alt="梯度求导基础知识"></p><h2 id="反向传播"><a href="#反向传播" class="headerlink" title="反向传播"></a>反向传播</h2><ul><li>反向求梯度的时候，一方面会用到之前的梯度信息，所以模型需要把之前求导的梯度值保存下来，节省计算资源；</li><li>另一方面，也会用到正向传播的中间值。</li></ul><p><img src="https://cdn.jsdelivr.net/gh/shushugui/cloudpic/202204041913709.png" alt="反向梯度传播"></p><h2 id="RNN中的梯度计算"><a href="#RNN中的梯度计算" class="headerlink" title="RNN中的梯度计算"></a>RNN中的梯度计算</h2><p><img src="https://cdn.jsdelivr.net/gh/shushugui/cloudpic/202204041917214.png" alt="RNN梯度反向传播"></p><p>右下角出现了W<del>hh</del>指数计算，所以在RNN中，会出现梯度消失或者梯度爆炸的现象。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>推荐系统学习</title>
       <link href="/2022/04/01/tui-jian-xi-tong-xue-xi/"/>
       <url>/2022/04/01/tui-jian-xi-tong-xue-xi/</url>
