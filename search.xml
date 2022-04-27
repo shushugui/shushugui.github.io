@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>网页小游戏</title>
+      <link href="/2022/04/27/wang-ye-xiao-you-xi/"/>
+      <url>/2022/04/27/wang-ye-xiao-you-xi/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ul><li><p><a href="https://www.crazygames.com/">crazygames</a></p></li><li><p><a href="https://poki.com/">poki</a></p></li><li><p><a href="https://www.return8090.com/">Return 8090</a></p></li><li><p><a href="https://iogames.space/">iogames</a></p></li><li><p><a href="https://zh.y8.com/">y8游戏网</a></p></li><li></li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>git基本操作</title>
       <link href="/2022/04/26/git-ji-ben-cao-zuo/"/>
       <url>/2022/04/26/git-ji-ben-cao-zuo/</url>

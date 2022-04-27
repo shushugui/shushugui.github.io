@@ -6,7 +6,7 @@
   <link href="http://shushugui.github.io/atom.xml" rel="self"/>
   
   <link href="http://shushugui.github.io/"/>
-  <updated>2022-04-26T10:04:02.432Z</updated>
+  <updated>2022-04-27T01:30:30.303Z</updated>
   <id>http://shushugui.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>网页小游戏</title>
+    <link href="http://shushugui.github.io/2022/04/27/wang-ye-xiao-you-xi/"/>
+    <id>http://shushugui.github.io/2022/04/27/wang-ye-xiao-you-xi/</id>
+    <published>2022-04-27T01:28:15.000Z</published>
+    <updated>2022-04-27T01:30:30.303Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>git基本操作</title>
