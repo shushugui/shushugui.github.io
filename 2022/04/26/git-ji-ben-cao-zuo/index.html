@@ -5,7 +5,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="git基本操作, Machine Learning">
-    <meta name="description" content="">
+    <meta name="description" content="一、git安装git安装配置与基本使用CSDN博客
+深入浅出Git教程
+二、git基本命令
+# 初始化git
+在某一个本地文件夹下：git init
+或者在某一个文件夹下，直接git clone +地址
+
+# 查看状态
+git status">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -452,21 +460,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-04-26
+                    2022-04-28
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    993
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    3 分
                 </div>
                 
 
@@ -486,7 +494,101 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h2 id="一、git安装"><a href="#一、git安装" class="headerlink" title="一、git安装"></a>一、git安装</h2><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/wo252618378/article/details/92754103?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.channel_param&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.channel_param">git安装配置与基本使用CSDN博客</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/syp172654682/p/7689328.html">深入浅出Git教程</a></p>
+<h2 id="二、git基本命令"><a href="#二、git基本命令" class="headerlink" title="二、git基本命令"></a>二、git基本命令</h2><p><img src="https://cdn.jsdelivr.net/gh/shushugui/cloudpic/202204281325170.png" alt="git基础架构"></p>
+<pre class=" language-code"><code class="language-code"># 初始化git
+在某一个本地文件夹下：git init
+或者在某一个文件夹下，直接git clone +地址
+
+# 查看状态
+git status
+
+# git添加到暂存区
+git add .
+
+# git提交到暂存区
+git commit -m "提交说明"
+
+# git推送到远程
+git push
+</code></pre>
+<ul>
+<li>有时候某些文件不想上传到github上，需要进行忽略</li>
+</ul>
+<p>在主目录下建立”.gitignore“文件，此文件有如下规则：</p>
+<pre class=" language-txt"><code class="language-txt">#表示注释
+*.txt       #表示忽略所有以txt结尾的文件
+!lib.txt    #但是除了lib.txt文件
+/temp       #仅仅忽略项目根目录下的temp文件，不包括其他目录temp文件
+build/      #忽略build/目录下的所有文件
+doc/*.txt   #忽略doc/notes.txt,但不包括docs/server/arch.txt
+</code></pre>
+<h2 id="三、Git分支操作"><a href="#三、Git分支操作" class="headerlink" title="三、Git分支操作"></a>三、Git分支操作</h2><pre class=" language-txt"><code class="language-txt">主分支是master，其他分支是开发分支，用dev表示。
+
+# 查看当前在哪个分支
+git branch
+
+# 新建一个分支,但依然停留在当前分支
+git branch dev
+
+# 切换分支
+git checkout dev
+或者
+git switch dev
+
+# 新建一个分支，并且切换到改分支
+git checkout -b dev
+
+# 合并指定分支到当前分支
+git merge dev
+
+# 删除分支
+git branch -d dev
+
+# 删除远程分支
+git push origin --delete dev
+</code></pre>
+<h3 id="四、本地分支与远程分支建立关联"><a href="#四、本地分支与远程分支建立关联" class="headerlink" title="四、本地分支与远程分支建立关联"></a>四、本地分支与远程分支建立关联</h3><p>远程有多个分支，本地也有多个分支，在<code>pull</code>和<code>push</code>的时候，需要确定好本地的分支与哪个远程分支的关联关系，否则可能会造成push到错误的分支上</p>
+<p>首先，可通过<code>git branch -vv </code>来查看分支之间的对应关系</p>
+<p><img src="https://cdn.jsdelivr.net/gh/shushugui/cloudpic/202204281116231.png" alt="分支对应关系图"></p>
+<ul>
+<li>第一种情况，在本地建立好分支，但是远程没有</li>
+</ul>
+<pre class=" language-txt"><code class="language-txt">#方法一
+git push --set-upstream origin dev
+
+#方法二
+git push -u origin dev
+</code></pre>
+<ul>
+<li><p>第二种情况，远程有新的分支，但是本地没有</p>
+<p>在本地创建分支并与远程分支进行关联，有两种方法</p>
+</li>
+</ul>
+<pre class=" language-txt"><code class="language-txt"># 方法一：
+第一步：先将远程分支pull到本地： git pull origin dev
+第二步：再在本地创建分支并与之关联，分为两种方法：
+(1)git checkout -b dev origin/dev
+(2)git checkout -b dev --track origin/dev   #可以简写为git checkout --track origin/dev
+</code></pre>
+<pre class=" language-txt"><code class="language-txt">  #方法二：
+  可以在pull远程分支的同时，创建本地分支并与之进行关联
+  git pull origin dev:dev     -------两个dev分别表示远程分支名：本地分支名
+</code></pre>
+<p>在设置好本地分支和远程分支之间的对应关系之后，以后可以直接使用<code>git pull</code>和<code>git push</code>进行拉取和推送到远端了。</p>
+<h2 id="五、git冲突解决"><a href="#五、git冲突解决" class="headerlink" title="五、git冲突解决"></a>五、git冲突解决</h2><p>git冲突存在两种情况：</p>
+<p>（1）在两个不同的分支之间，例如master和dev分支，同时针对同一个文件进行修改造成冲突，需要人工合并冲突；</p>
+<p>（2）同一个分支，远程和本地的内容不一致造成冲突。</p>
+<p>冲突一般在合并文件的时候出现，例如将dev开发分支合并到master分支上时，涉及到merge操作</p>
+<p>冲突解决之后，再将解决之后的冲突进行add 和commit ,然后push到远端。</p>
+<h2 id="六、git-merge"><a href="#六、git-merge" class="headerlink" title="六、git merge"></a>六、git merge</h2><p>merge操作可以简单粗暴的理解为把dev开发分支的文件复制到master文件里面。</p>
+<p>第一步：在dev开发完之后，先进行add和commit ，是否push到远端都行。</p>
+<p>第二步：切换到master分支，<code>git merge dev</code>命令，将dev的文件合并到master里面，此时相当于将dev文件复制到本地master仓库里，此时远程还没有，</p>
+<p>第三步，在master分支下，进行push到远程。</p>
+<p>以上步骤限于没有冲突发生的时候，如果出现了冲突，还需要进行冲突解决，解决之后再add、commit、和push.</p>
+<h2 id="七、Pycharm中进行git操作"><a href="#七、Pycharm中进行git操作" class="headerlink" title="七、Pycharm中进行git操作"></a>七、Pycharm中进行git操作</h2><p>用pycharm打开一个本地仓库，就可以直接用pycharm实现对远程git的交互，进行冲突解决等操作。</p>
+
                 
             </div>
             <hr/>
@@ -981,7 +1083,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">1.4k</span>
+                        class="white-color">2.3k</span>
             
             
             
